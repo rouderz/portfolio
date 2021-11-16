@@ -26,9 +26,9 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/wolfgang-welcomez-b47011175/",
   gmail: "wolfgangwilfredo@gmail.com",
   gitlab: "https://gitlab.com/wolfgangwilfredo",
-  //facebook: "https://www.facebook.com/harikrishan.kanani/",
-  //twitter: "https://twitter.com/Harikrushn9",
-  //instagram: "https://www.instagram.com/hari_kanani_/",
+  //facebook: "https://www.facebook.com/TeAmoDani/",
+  //twitter: "https://twitter.com/Rouderz",
+  //instagram: "https://www.instagram.com/rouderz/",
 };
 
 const skills = {
@@ -382,7 +382,7 @@ const contactPageData = {
     title: "Blogs",
     subtitle:
       "I don't blog frequently but when I do something awesome, I do try to document it so it can be helpful to others. I write on Twitter.",
-    link: "https://twitter.com/Harikrushn9",
+    link: "https://twitter.com/Rouderz",
     avatar_image_path: "blogs_image.svg",
   },
 };
