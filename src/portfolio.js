@@ -329,11 +329,11 @@ const experience = {
       title: "Work Experience",
       experiences: [
         {
-          title: "Full Stack Developer",
-          company: "Pryffer LLC",
-          company_url: "https://valora-infotech.business.site/",
-          logo_path: "valora.jpg",
-          duration: "Oct 2020 - Mar 2021",
+          title: "Backend Developer",
+          company: "Quikly Group",
+          company_url: "https://quikly.app/",
+          logo_path: "quikly.png",
+          duration: "March 2021 - Present",
           location: "Office",
           description: `Train, manage and provide guidance to junior software development staff.
           Work closely with the Project Manager and Team Leads on change request functions.
@@ -345,11 +345,37 @@ const experience = {
           color: "#0071C5",
         },
         {
+          title: "Full Stack Developer",
+          company: "Grupo Fantec",
+          company_url: "",
+          logo_path: "grupofantec.png",
+          duration: "October 2020 - February 2021",
+          location: "Work From Home",
+          description: `Work closely with the Client and Team on change request functions.
+          We Primarily used LAMP Stack. 40% of my work was doing backend development, 30% of my work was designing database schemas, and 30% of my work was on maintain hosting and user traffics on the website.
+          `,
+          // "Created Front end of Yearn Financial Mutual Funds website. also degined simple web application for better user experience, designed DB Schemas as well.",
+          color: "#ee3c26",
+        },
+        {
           title: "Full Stack Developer (Freelancer)",
-          company: "NightOwls",
-          company_url: "http://nightowls.company/",
-          logo_path: "nightowls.jpg",
-          duration: "Sep 2020 - Oct 2020",
+          company: "2Prius-llc",
+          company_url: "",
+          logo_path: "banprius.png",
+          duration: "July 2020 - January 2021",
+          location: "Work From Home",
+          description: `Work closely with the Client and Team on change request functions.
+          We Primarily used LAMP Stack. 40% of my work was doing backend development, 30% of my work was designing database schemas, and 30% of my work was on maintain hosting and user traffics on the website.
+          `,
+          // "Created Front end of Yearn Financial Mutual Funds website. also degined simple web application for better user experience, designed DB Schemas as well.",
+          color: "#ee3c26",
+        },
+        {
+          title: "Full Stack Developer",
+          company: "Pryffer-llc",
+          company_url: "",
+          logo_path: "pryffer.jpg",
+          duration: "May 2019 - October 2020",
           location: "Work From Home",
           description: `Work closely with the Client and Team on change request functions.
           We Primarily used LAMP Stack. 40% of my work was doing backend development, 30% of my work was designing database schemas, and 30% of my work was on maintain hosting and user traffics on the website.
@@ -521,7 +547,7 @@ const projects = {
     },
     {
       id: "5",
-      name: "harikanani.github.io",
+      name: "rouderz.github.io",
       url: "https://github.com/harikanani/harikanani.github.io",
       description:
         "A Personal Portfolio Website that showcases my work and experience. which is hosted on Github Pages.",
