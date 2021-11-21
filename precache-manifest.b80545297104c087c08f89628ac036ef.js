@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cfb8a31b9e19ffa98c17c3e886760526",
+    "revision": "0e2d660afbf6354a0e30ac8517be74b6",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "158cf06c70c542e89911",
-    "url": "/portfolio/static/css/main.58163580.chunk.css"
+    "revision": "f7f0daf853177dbcd007",
+    "url": "/portfolio/static/css/main.a57ca9f1.chunk.css"
   },
   {
-    "revision": "4da038eb0b1475f70cae",
-    "url": "/portfolio/static/js/2.fa2f2e1d.chunk.js"
+    "revision": "a1b55466443323b8f2c2",
+    "url": "/portfolio/static/js/2.eeeb0143.chunk.js"
   },
   {
     "revision": "4cf5c6c6f464cc15458a86cbdc669a15",
-    "url": "/portfolio/static/js/2.fa2f2e1d.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.eeeb0143.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "158cf06c70c542e89911",
-    "url": "/portfolio/static/js/main.11348781.chunk.js"
+    "revision": "f7f0daf853177dbcd007",
+    "url": "/portfolio/static/js/main.d3767c74.chunk.js"
   },
   {
     "revision": "ba231e20624ac31d97de",
@@ -54,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ee6539921d713482b8ccd4d0d23961bb",
     "url": "/portfolio/static/media/Montserrat-Regular.ee653992.ttf"
+  },
+  {
+    "revision": "c1ee12a5d4ab72dabcd0c1a8abb1ad66",
+    "url": "/portfolio/static/media/banprius.c1ee12a5.png"
   },
   {
     "revision": "a1051a228140c97862ba9a7f321c92b6",
@@ -144,6 +148,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/googleAssistant.0c8a4c11.jpg"
   },
   {
+    "revision": "a1aae36e3922a8a5a8d36407592fb74b",
+    "url": "/portfolio/static/media/grupofantec.a1aae36e.png"
+  },
+  {
     "revision": "3d9465c3483dffb591b31f101699d0dc",
     "url": "/portfolio/static/media/gtu.3d9465c3.png"
   },
@@ -190,6 +198,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c108f55777ceaa6690606a207b737d0a",
     "url": "/portfolio/static/media/postman.c108f557.png"
+  },
+  {
+    "revision": "a3da116a1640e681bb0f58b91266c5ff",
+    "url": "/portfolio/static/media/pryffer.a3da116a.jpg"
+  },
+  {
+    "revision": "07a21401a7818199ade9d5daadff9a8d",
+    "url": "/portfolio/static/media/quikly.07a21401.png"
   },
   {
     "revision": "7b7a76ef55658f6999ce00c5d55f85a5",
