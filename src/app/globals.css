@@ -1,25 +1,100 @@
 /* Design tokens and base styles. Each component's styles live in its own .module.css */
+/* Light theme: a calm forest morning. */
 :root {
-  --bg: #fbfaf8;
-  --surface: #ffffff;
-  --text: #1c1b1a;
-  --muted: #5e5b57;
-  --border: #e4e1dc;
-  --accent: #b4410f;
+  --bg: #dcebe0;
+  --surface: #f9f6ea;
+  --text: #143028;
+  --muted: #46625a;
+  --border: #143028;
+  --accent: #c93a33;
   --accent-contrast: #ffffff;
-  --radius: 14px;
+  --link: #a82c27;
   --maxw: 68rem;
+  --hero-ink: #143028;
+  --hero-ink-soft: #2d4d43;
+
+  --px-sky-top: #b4d8cc;
+  --px-sky-mid: #cde6dc;
+  --px-sky-bottom: #e6f0e4;
+  --px-cloud: #f7f5e8;
+  --px-cloud-shade: #dfe6da;
+  --px-star: transparent;
+  --px-hill-far: #a9c9bd;
+  --px-hill-near: #8fb5a6;
+  --px-leaf-dark: #5b8089;
+  --px-leaf-mid: #86ab9b;
+  --px-leaf-light: #c6d9b4;
+  --px-trunk: #8a4f55;
+  --px-forest-dark: #2f6f2f;
+  --px-forest-mid: #4b9a3a;
+  --px-forest-light: #7fc24d;
+  --px-water: #8fbab4;
+  --px-water-light: #b9d6cf;
+  --px-water-deep: #7aa8a4;
+  --px-grass: #7fa77a;
+  --px-grass-dark: #5d8a64;
+  --px-grass-light: #a9c98a;
+  --px-path: #d7b98a;
+  --px-roof: #c0553f;
+  --px-roof-alt: #4e7fa0;
+  --px-wall: #f0e6cf;
+  --px-wall-shade: #cdbf9f;
+  --px-cliff: #bfc3bd;
+  --px-cliff-dark: #8f948f;
+  --px-flower: #e8575f;
+  --px-field: #b7c95a;
+  --px-field-alt: #9dbb4e;
+  --px-ink: #143028;
+  --px-accent: #e8574f;
   color-scheme: light;
 }
 
+/* Dark theme: the same place at night. */
 :root[data-theme="dark"] {
-  --bg: #151413;
-  --surface: #1f1d1b;
-  --text: #f1eeea;
-  --muted: #b0aba4;
-  --border: #35322f;
-  --accent: #ff9a62;
-  --accent-contrast: #151413;
+  --bg: #0e1d24;
+  --surface: #162b34;
+  --text: #e8f2ec;
+  --muted: #a4bdb4;
+  --border: #8fc4b0;
+  --accent: #ff7d70;
+  --accent-contrast: #1b0d0c;
+  --link: #ff9a8f;
+  --hero-ink: #f0f6f2;
+  --hero-ink-soft: #c5d8d0;
+
+  --px-sky-top: #0b1730;
+  --px-sky-mid: #16294a;
+  --px-sky-bottom: #2d3f63;
+  --px-cloud: #4a5a7c;
+  --px-cloud-shade: #36466a;
+  --px-star: #fff6c8;
+  --px-hill-far: #1c3550;
+  --px-hill-near: #142b3f;
+  --px-leaf-dark: #0f2f33;
+  --px-leaf-mid: #1d4a47;
+  --px-leaf-light: #2f6a5c;
+  --px-trunk: #4a2f3a;
+  --px-forest-dark: #12361f;
+  --px-forest-mid: #1d5a2c;
+  --px-forest-light: #2f7f3f;
+  --px-water: #123a4d;
+  --px-water-light: #1f5f73;
+  --px-water-deep: #0c2b3b;
+  --px-grass: #2c5a45;
+  --px-grass-dark: #1f4635;
+  --px-grass-light: #3e7a58;
+  --px-path: #6b5a46;
+  --px-roof: #a8483a;
+  --px-roof-alt: #3c6a8a;
+  --px-wall: #cdbfa0;
+  --px-wall-shade: #9d9078;
+  --px-cliff: #5a6470;
+  --px-cliff-dark: #3b434d;
+  --px-flower: #ff7d70;
+  --px-field: #7a8f2f;
+  --px-field-alt: #66792a;
+  --px-ink: #0b1220;
+  --px-accent: #ff7d70;
   color-scheme: dark;
 }
 
@@ -41,7 +116,7 @@ body {
 }
 
 a {
-  color: var(--accent);
+  color: var(--link);
   text-underline-offset: 3px;
 }
 
@@ -54,8 +129,10 @@ a {
 h1,
 h2,
 h3 {
+  font-family: var(--font-pixel), system-ui, sans-serif;
+  font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 h1 {
