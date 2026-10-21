@@ -1,0 +1,7 @@
+.article {
+  padding-block: 3rem 0;
+}
+
+.meta {
+  color: var(--muted);
+}

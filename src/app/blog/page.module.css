@@ -1,0 +1,23 @@
+.section {
+  padding-block: 3rem 0;
+}
+
+.list {
+  display: grid;
+  gap: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.date {
+  color: var(--muted);
+}
+
+.description {
+  margin: 0.3rem 0 0;
+}
