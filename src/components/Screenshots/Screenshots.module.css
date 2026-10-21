@@ -1,0 +1,40 @@
+.figure {
+  margin: 2rem 0;
+  max-width: none;
+}
+
+.title {
+  margin-bottom: 0.8rem;
+  font-family: var(--font-pixel, system-ui), monospace;
+  font-weight: 700;
+}
+
+.list {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 3px solid var(--border);
+  box-shadow: 4px 4px 0 var(--border);
+  background: var(--surface);
+}
+
+.caption {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
