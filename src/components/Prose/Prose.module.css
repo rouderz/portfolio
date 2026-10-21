@@ -5,8 +5,7 @@
 .prose pre {
   overflow-x: auto;
   padding: 1rem;
-  border: 1px solid var(--border);
-  border-radius: 10px;
+  border: 2px solid var(--border);
 }
 
 .prose code {

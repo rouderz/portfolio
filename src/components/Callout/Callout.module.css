@@ -1,8 +1,8 @@
 .callout {
   margin-block: 1.5rem;
   padding: 0.8rem 1rem;
-  border-left: 4px solid var(--accent);
-  border-radius: 8px;
+  border: 3px solid var(--border);
+  box-shadow: 4px 4px 0 var(--border);
   background: var(--surface);
 }
 
