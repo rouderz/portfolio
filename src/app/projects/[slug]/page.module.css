@@ -17,8 +17,7 @@
 
 .tag {
   padding: 0.1rem 0.6rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
+  border: 2px solid var(--border);
   color: var(--muted);
   font-size: 0.8rem;
 }
@@ -27,7 +26,8 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   margin-block: 1.5rem;
-  border-radius: var(--radius);
+  border: 3px solid var(--border);
+  box-shadow: 6px 6px 0 var(--border);
   object-fit: cover;
 }
 
@@ -41,9 +41,11 @@
 .button {
   display: inline-block;
   padding: 0.6rem 1.2rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
+  border: 2px solid var(--border);
+  box-shadow: 3px 3px 0 var(--border);
+  background: var(--surface);
   color: var(--text);
+  font-family: var(--font-pixel), monospace;
   font-weight: 600;
   text-decoration: none;
 }

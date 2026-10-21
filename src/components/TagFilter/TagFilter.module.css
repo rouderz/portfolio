@@ -7,12 +7,12 @@
 
 .button {
   padding: 0.3rem 0.9rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
+  border: 2px solid var(--border);
+  box-shadow: 2px 2px 0 var(--border);
   background: transparent;
   color: var(--text);
-  font: inherit;
-  font-size: 0.85rem;
+  font-family: var(--font-pixel), monospace;
+  font-size: 0.9rem;
   cursor: pointer;
 }
 

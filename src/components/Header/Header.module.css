@@ -3,7 +3,7 @@
   top: 0;
   z-index: 5;
   background: var(--bg);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 3px solid var(--border);
 }
 
 .bar {
@@ -18,8 +18,9 @@
 
 .brand {
   margin-right: auto;
-  font-size: 1.15rem;
-  font-weight: 800;
+  font-family: var(--font-pixel), monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
   color: var(--text);
   text-decoration: none;
 }
@@ -34,7 +35,8 @@
 }
 
 .link {
-  color: var(--muted);
+  color: var(--text);
+  font-family: var(--font-pixel), monospace;
   font-weight: 500;
   text-decoration: none;
 }

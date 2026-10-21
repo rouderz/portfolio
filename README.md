@@ -43,6 +43,25 @@ src/
     └── format.ts
 ```
 
+## The game-style home page
+
+The home page is a small pixel-art game, drawn entirely in code (no image files):
+
+- **Hero** (`src/components/PixelScene/`): a parallax landscape on a `<canvas>`. Layers (sky, clouds, hills, trees, ground) move with the pointer and with scroll. It pauses when off screen and stops animating with `prefers-reduced-motion`.
+- **World map** (`src/components/WorldMap/`): every project is a building. Walk with the arrow keys / WASD and press `Enter`, click the map to walk there, or click a building. Each building is also a real link, so it works with a keyboard, a screen reader and without the canvas.
+- **Themes**: all colors are CSS variables (`--px-*` in `src/app/globals.css`), so the dark theme is the same place at night.
+
+Where things go:
+
+| File                                 | What it controls                                     |
+| ------------------------------------ | ---------------------------------------------------- |
+| `src/components/WorldMap/places.ts`  | Building positions (`PROJECT_SLOTS`), map size, lake |
+| `src/lib/pixel/sprites.ts`           | Pixel sprites (cat, explorer, houses) as text rows   |
+| `src/components/PixelScene/scene.ts` | Hero layers and animation                            |
+| `src/app/globals.css`                | Light and dark palettes                              |
+
+The map has 6 project slots; extra projects still appear in `/projects/`. To add slots, add coordinates to `PROJECT_SLOTS`.
+
 ## Adding content
 
 ### A project

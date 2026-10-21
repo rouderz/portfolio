@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
+import { Pixelify_Sans } from "next/font/google";
 import "./globals.css";
 import { site, absoluteUrl, asset } from "@/lib/site";
 import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
 import { ThemeScript } from "@/components/ThemeScript/ThemeScript";
 import styles from "./layout.module.css";
+
+const pixel = Pixelify_Sans({ subsets: ["latin"], variable: "--font-pixel", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(absoluteUrl("/")),
@@ -22,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={pixel.variable} suppressHydrationWarning>
       <head>
         <ThemeScript />
       </head>
