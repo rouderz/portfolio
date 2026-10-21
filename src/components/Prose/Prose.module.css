@@ -2,6 +2,11 @@
   max-width: 44rem;
 }
 
+/* Galleries may use the full page width. */
+.prose figure {
+  max-width: none;
+}
+
 .prose pre {
   overflow-x: auto;
   padding: 1rem;

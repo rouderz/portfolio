@@ -1,0 +1,127 @@
+---
+title: Gift it
+description: Social shopping app where friends discover, gift and share products together. I built features across the mobile app and the backend.
+date: 2026-10-12
+tags: [React Native, Expo, TypeScript, Convex, Shopify]
+cover: /images/giftit/cover.webp
+coverAlt: Two phones showing the Gift it home screen in light and dark mode
+featured: true
+authors: [Wolfgang Welcomez]
+---
+
+**Gift it** (built by the ShopIt team) is a social shopping app on iOS where friends discover products, build wishlists
+and send each other gifts. It runs on Shopify for the catalog and checkout, Convex for the backend, and Expo for the
+mobile app. The codebase is private, so this page is a tour of the product through screenshots.
+
+## My role
+
+I worked on the team as a mobile and full-stack engineer for about a year, with 150+ commits across the app and the
+backend. I owned features from first prototype to production, wrote the tests around them, and kept the docs in sync.
+
+## What I built
+
+- **Save for later in the cart.** A device-local saved list, made safe for account changes, partial adds and retries with
+  write-ahead recovery so a failed move can never lose or duplicate an item.
+- **Back-in-stock alerts.** A "notify me when it's back" flow on out-of-stock products, from the Convex schedule to the
+  mobile UI.
+- **Replacement gift suggestions** after a gift order is cancelled, so the sender can still surprise their friend.
+- **Verified product reviews**, with a "Helpful" action and animated feedback.
+- **Friends feed redesign**, later moved into the bottom navigation.
+- **A price-first product page**, with tags, badges and a clearer layout.
+- **Discovery that fails gracefully**, with real loading and error states on every surface.
+- **Public wishlist gifting**, and international phone number matching for contact sync.
+
+## Engineering beyond features
+
+- Fixed an image upload ownership hole in the backend and added a 13+ birthday safeguard.
+- Upgraded the app to Expo SDK 57 for the new iOS scene life cycle.
+- Added CI guards (mobile API signature drift, Convex deploy gated on tests and typecheck) and targeted unit tests for
+  pure business logic.
+- Wrote documentation pages for the team, kept honest by a CI check that fails when covered code changes without a docs update.
+
+## Stack
+
+React Native (Expo, React 19), TypeScript, Convex, Clerk, Stripe, Shopify, Next.js (merchant dashboard), Turborepo and
+Bun, Biome, Jest.
+
+## A tour of the app
+
+<Callout title="About the screenshots">
+  Taken on the iOS simulator with a test account and a development store, so every product and name
+  is demo data.
+</Callout>
+
+<Screenshots
+  title="Light mode"
+  items={[
+    {
+      src: "/images/giftit/light-01-home.webp",
+      alt: "Home feed with a search bar and a grid of products",
+      caption: "Home: personalized product feed",
+    },
+    {
+      src: "/images/giftit/light-02-search.webp",
+      alt: "Search screen with filters and an Explore gifts grid",
+      caption: "Search and filters, by recipient",
+    },
+    {
+      src: "/images/giftit/light-03-friends.webp",
+      alt: "Friends feed empty state with a Find friends button",
+      caption: "Friends feed",
+    },
+    {
+      src: "/images/giftit/light-05-product.webp",
+      alt: "Product page with price, review summary, Add to Cart and Send Gift buttons",
+      caption: "Product page: price first, Send Gift",
+    },
+    {
+      src: "/images/giftit/light-06-cart.webp",
+      alt: "Cart sheet with Save for later, Make it a gift and a checkout button",
+      caption: "Cart with Save for later",
+    },
+    {
+      src: "/images/giftit/light-07-profile-menu.webp",
+      alt: "Profile with wishlists and activity tabs",
+      caption: "Profile and wishlists",
+    },
+    {
+      src: "/images/giftit/light-09-sizes-style.webp",
+      alt: "Sizes and style sheet with shirt sizes",
+      caption: "Sizes and style, shared with friends",
+    },
+    {
+      src: "/images/giftit/light-10-notifications.webp",
+      alt: "Notifications screen with a prompt to enable notifications",
+      caption: "Notifications",
+    },
+    {
+      src: "/images/giftit/light-08-settings.webp",
+      alt: "Settings list with account, preferences and privacy",
+      caption: "Settings",
+    },
+  ]}
+/>
+
+<Screenshots
+  title="Dark mode"
+  items={[
+    { src: "/images/giftit/dark-01-home.webp", alt: "Home feed in dark mode", caption: "Home" },
+    {
+      src: "/images/giftit/dark-02-search.webp",
+      alt: "Search screen in dark mode",
+      caption: "Search",
+    },
+    {
+      src: "/images/giftit/dark-05-product.webp",
+      alt: "Product page in dark mode",
+      caption: "Product page",
+    },
+    { src: "/images/giftit/dark-06-cart.webp", alt: "Cart sheet in dark mode", caption: "Cart" },
+    { src: "/images/giftit/dark-07-profile.webp", alt: "Profile in dark mode", caption: "Profile" },
+    {
+      src: "/images/giftit/dark-08-settings.webp",
+      alt: "Settings in dark mode",
+      caption: "Settings",
+    },
+  ]}
+/>
