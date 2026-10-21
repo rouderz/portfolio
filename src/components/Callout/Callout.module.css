@@ -1,0 +1,15 @@
+.callout {
+  margin-block: 1.5rem;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.callout strong {
+  display: block;
+}
+
+.callout p {
+  margin: 0.3rem 0 0;
+}

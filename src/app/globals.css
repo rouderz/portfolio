@@ -1,0 +1,75 @@
+/* Design tokens and base styles. Each component's styles live in its own .module.css */
+:root {
+  --bg: #fbfaf8;
+  --surface: #ffffff;
+  --text: #1c1b1a;
+  --muted: #5e5b57;
+  --border: #e4e1dc;
+  --accent: #b4410f;
+  --accent-contrast: #ffffff;
+  --radius: 14px;
+  --maxw: 68rem;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #151413;
+  --surface: #1f1d1b;
+  --text: #f1eeea;
+  --muted: #b0aba4;
+  --border: #35322f;
+  --accent: #ff9a62;
+  --accent-contrast: #151413;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin: 0 0 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

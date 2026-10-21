@@ -1,0 +1,75 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition:
+    transform 0.15s,
+    border-color 0.15s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.placeholder {
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  font-weight: 800;
+  background: color-mix(in srgb, var(--accent) 18%, var(--surface));
+  color: var(--accent);
+}
+
+.body {
+  padding: 1rem 1.1rem 1.2rem;
+}
+
+.title {
+  margin: 0 0 0.4rem;
+  font-size: 1.2rem;
+}
+
+.link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* The whole card is clickable, but the link is the only focusable element. */
+.link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.description {
+  margin: 0 0 0.8rem;
+  color: var(--muted);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  padding: 0.1rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
