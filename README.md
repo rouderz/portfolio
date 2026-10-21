@@ -82,6 +82,8 @@ Same thing, in `content/blog/`, with `title`, `description`, `date` and optional
 Create `src/components/MyThing/MyThing.tsx` and `MyThing.module.css`. Import it with `@/components/MyThing/MyThing`.
 To use it inside an `.mdx` file, register it in `src/components/Prose/Prose.tsx`.
 
+In `.mdx` files you can already use `<Callout>` and `<Screenshots title="…" items={[{ src, alt, caption }]} />` (see `content/projects/gift-it.mdx`). Put images in `public/images/<project>/`; WebP keeps them small.
+
 ## Local development
 
 Requires Node.js >= 22.12.
