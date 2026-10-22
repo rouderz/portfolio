@@ -3,8 +3,8 @@ title: Lumo
 description: Native macOS app that lives in the MacBook notch and lets you approve and answer Claude Code sessions.
 date: 2026-09-01
 tags: [macOS, Swift, SwiftUI]
-cover: /images/cover-example.svg
-coverAlt: Orange and blue gradient representing the app
+cover: /images/lumo/cover.webp
+coverAlt: Animated demo of Lumo opening from the MacBook notch
 featured: true
 authors: [Wolfgang Welcomez]
 links:
@@ -22,3 +22,42 @@ This is an **example project**: replace this text with your own.
 - Permission approvals from the notch, always with an explicit click.
 - Characters drawn in code with `Canvas`.
 - No telemetry: network calls only go to services you configure.
+
+## A look inside
+
+The island opens from the notch. Pick a character on the left, then switch between a home overview, a chat and a Claude
+Code session.
+
+<Screenshots
+  layout="wide"
+  items={[
+    {
+      src: "/images/lumo/home.webp",
+      alt: "Lumo Home tab showing Claude Code status, installed hooks and quick actions",
+      caption: "Home: sessions, hooks and shortcuts",
+      width: 1000,
+      height: 379,
+    },
+    {
+      src: "/images/lumo/chat.webp",
+      alt: "Lumo Chat tab with a message box",
+      caption: "Chat with Claude from the notch",
+      width: 1000,
+      height: 380,
+    },
+    {
+      src: "/images/lumo/code.webp",
+      alt: "Lumo Code tab with the folder and permission mode",
+      caption: "Code: run Claude Code in a folder",
+      width: 1000,
+      height: 374,
+    },
+    {
+      src: "/images/lumo/settings.webp",
+      alt: "Lumo settings with a choice of twelve color themes, sound and behavior options",
+      caption: "Settings: twelve themes, sounds and behavior",
+      width: 1000,
+      height: 1088,
+    },
+  ]}
+/>
